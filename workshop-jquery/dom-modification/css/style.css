@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+}
+
+body {
+    margin: 0 2em 0 2em;
+    background: linear-gradient(135deg, #1a1f33, #2b1037, #ff8fb1, #ffc574); /* Gradient */
+    background-size: 400% 400%; 
+    animation: gradientAnimation 10s ease infinite; 
+    padding: 2em;
+    color: white; 
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#bg {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 50px;
+    position: relative;
+    border: 2px solid black;
+    background-size: cover; /* Dopasowanie obrazu */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    background-repeat: no-repeat; /* Zapobieganie powtarzaniu obrazu */
+    overflow: hidden; /* Ukrycie zawartości pseudo-elementu poza ramą */
+    animation: zoomInOut 8s infinite ease-in-out; /* Animacja */
+
+}
+
+#bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Biały kolor z przezroczystością */
+    z-index: 1; /* Umieszczenie nad tłem, ale pod zawartością */
+}
+
+@keyframes zoomInOut {
+    0% {
+        background-size: 160%; /* Początkowy rozmiar */
+    }
+    50% {
+        background-size: 200%; /* Powiększenie do 120% */
+    }
+    100% {
+        background-size: 160%; /* Powrót do początkowego rozmiaru */
+    }
+}
+
+p {
+    color: white;
+    -webkit-text-stroke: 1px black; /* Obwódka: grubość i kolor */
+}
+
+
+
+.button-container {
+    display: flex;
+    flex-basis: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px;
+    gap: 20px;
+    z-index: 10;
+
+}
+.p-container {
+    z-index: 10;
+}
+
+.button-container button {
+    background: linear-gradient(to bottom, #FFB37A, #E87DB8, #4A4BFF); /* Gradient */
+    color: white;
+    -webkit-text-stroke: 1px black; /* Obwódka: grubość i kolor */
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+    background: linear-gradient(to bottom, #FFD1A6, #FF8CCF, #7A7CFF); /* Zmiana koloru gradientu na hover */
+    transform: scale(1.1);
+}
+
+
