@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    background-color: aquamarine;
+}
+
+div:first-of-type {
+    width: 100%;
+    text-align: center;
+}
+
+div:last-of-type {
+    width: 100%;
+    text-align: center;
+}
+
+#employees {
+    background-color: rgb(1, 67, 44);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgb(1, 67, 44);
+    padding: 10px;
+    gap: 20px;
+}
+
+.salary::before {
+    content: "💲:";
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+
+.person {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button {
+    background-color: rgb(1, 67, 44);
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#errors {
+    margin: auto;
+    width: 50%;
+    min-height: 200px;
+    border: 1px solid red;
+}
+#errors h3 {
+    color: red;
+}
+
+#errors p {
+    color: red;
+}

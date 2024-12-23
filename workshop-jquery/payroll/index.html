@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="employees">
+        <div>
+            <h2>Wypłaty pracowników</h2>
+        </div>
+        <div id="person1" class="person">
+            <span class="first-name">Marcin</span>
+            <span class="last-name">Lubicki</span>
+            <span class="salary">6500</span>
+        </div>
+        <div id="person2" class="person">
+            <span class="first-name">Katarzyna</span>
+            <span class="last-name">Rudlowska</span>
+            <span class="salary">2600</span>
+        </div>
+        <div id="person3" class="person">
+            <span class="first-name">Robert</span>
+            <span class="last-name">Zajda</span>
+            <span class="salary">4500</span>
+        </div>
+        <div id="person4" class="person">
+            <span class="first-name">Anna</span>
+            <span class="last-name">Szapiel</span>
+            <span class="salary">3700</span>
+        </div>
+        <div id="person5" class="person">
+            <span class="first-name">Piotr</span>
+            <span class="last-name">Moskal</span>
+            <span class="salary">4700</span>
+        </div>
+        <div class="sum-container">
+            <h3>Suma: <span id="sum">0</span> PLN</h3>
+        </div>
+    </div>
+    <button id="count-sum">Oblicz sumę wypłat</button>
+
+    <div id="errors">
+        <h3 id="error-info">Tu pojawi się lista błędów w danych - jeśli wystąpią</h3>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="src/main.js"></script>
+
+
+</body>
+
+</html>
