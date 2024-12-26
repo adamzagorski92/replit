@@ -1,0 +1,25 @@
+Warsztat – Pobierz dane po kliknięciu przycisku
+Stwórz podstawową strukturę strony HTML i podepnij do niej plik ze skryptem JavaScript script.js, który umieść w folderze js.
+
+Dodaj do strony przycisk (np. <button>) z napisem Pobierz dane.
+
+Ustaw nasłuch zdarzenia click na tym przycisku.
+
+Funkcją obsługującą to zdarzenie będzie funkcja getData() (oczywiście musisz ją stworzyć).
+
+Funkcja getData() pobiera z serwera objekt JSON
+
+Adres URL do API na serwerze: https://akademia108.pl/api/ajax/get-post.php
+
+Po pobraniu danych w formacie JSON wyciągnij z nich:
+
+userId
+id
+title
+body
+a następnie dodaj te dane do strony (w dowolnym miejscu i w dowolny sposób).
+
+Dodatkowe uwagi:
+
+Napisz kod za pomocą czystego JavaScript, a do pobierania danych użyj funkcji fetch().
+Dane pobieraj za pomocą metody GET protokołu HTTP.
