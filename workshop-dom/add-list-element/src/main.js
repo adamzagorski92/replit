@@ -49,5 +49,3 @@ container.appendChild(ulSign);
 container.appendChild(newButton);
 // dodaje obsługę kliknięcia do przycisku za pomocą wyżej zdefiniowanej funkcji
 newButton.addEventListener('click', addItem);
-
-
