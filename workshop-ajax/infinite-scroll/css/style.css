@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+hr {
+    width: 100%;
+}
+
+#preloader {
+width: 150px;
+position: fixed;
+right: 10px;
+bottom: 10px;
+border-radius: 10px;
+display: none;
+}

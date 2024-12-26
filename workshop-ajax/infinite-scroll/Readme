@@ -1,0 +1,60 @@
+Stwórz podstawową strukturę strony HTML i podepnij do niej plik ze skryptem JavaScript script.js, który umieść w folderze js.
+
+Dodaj do strony listę użytkoników (kod HTML poniżej)
+
+<p>User ID: 108</p>
+<p>User Name: Akademia108</p>
+<p>User URL: http://akademia108.pl<br>--------</p> 
+        
+<p>User ID: 107</p>
+<p>User Name: Krystian</p>
+<p>User URL: http://tvn24.pl<br>--------</p>      
+
+<p>User ID: 106</p>
+<p>User Name: Asia</p>
+<p>User URL: http://bbc.com<br>--------</p>      
+
+<p>User ID: 105</p>
+<p>User Name: Grześ</p>
+<p>User URL: http://wp.pl<br>--------</p>      
+                                            
+<p>User ID: 104</p>
+<p>User Name: Juri</p>
+<p>User URL: http://interia.pl<br>--------</p>      
+
+<p>User ID: 103</p>
+<p>User Name: Paweł</p>
+<p>User URL: http://onet.pl<br>--------</p>      
+                                
+<p>User ID: 102</p>
+<p>User Name: Adam</p>
+<p>User URL: http://adamski.pl<br>--------</p>      
+
+<p>User ID: 101</p>
+<p>User Name: Aleksandra</p>
+<p>User URL: http://aleksandra.pl<br>--------</p> 
+
+Na obiekcie window ustaw nasłuch zdarzenia scroll.
+
+Funkcją obsługującą to zdarzenie będzie funkcja scrollToEndOfPage() (oczywiście musisz ją stworzyć).
+
+Funkcja scrollToEndOfPage() sprawdza, czy nie zostało przeskrolowane na dół do końca strony.
+
+Jeśli się to wydarzy to ma zostać uruchomiona funkcja getData() (musisz ją stworzyć), która rozpocznie pobieranie danych (link do API poniżej), a następnie po otrzymaniu danych na dole strony ma zostać doklejona kolejna lista z użytkownikami (wtedy stronę będzie można skrolować ponownie na dół).
+
+Gdy strona znowu zostanie przeskrolowana na dół do końca ponownie zostanie uruchomiony cały proces pobierania danych i doklejania ich na dole strony.
+
+Adres URL do API na serwerze: https://akademia108.pl/api/ajax/get-users.php
+
+Dodatkowe uwagi:
+
+Napisz kod za pomocą czystego JavaScript, a do pobierania danych użyj Fetch API – czyli użyj funkcji fetch().
+Dane pobieraj za pomocą metody GET protokołu HTTP.
+Aby sprawdzić, czy zostało przeskrolowane na dół do końca strony użyj właściwości obiektu 'document.documentElement’:
+document.documentElement.scrollHeight – długość całej strony od góry do dołu
+document.documentElement.scrollTop – wysokość na jaką przeskrolowaliśmy
+document.documentElement.clientHeight – wysokość wewnętrzna okna przeglądarki
+
+GRAFIKA: https://akademia108.pl/wp-content/uploads/assets/docs/ajax/ajax-warsztat-infinite-scroll.png
+
+Dodatkowo podczas pobierania danych możesz włączać Preloader (jakikolwiek np. animowany GIF lub zrobiony w CSS)
